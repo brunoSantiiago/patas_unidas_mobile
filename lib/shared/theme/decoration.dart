@@ -1,5 +1,5 @@
-import 'package:dashyou/ui/styles/app_theme/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:patas_unidas_mobile/shared/theme/app_colors.dart';
 
 class StyleDecoration {
   static BoxDecoration decorationAppBar = BoxDecoration(

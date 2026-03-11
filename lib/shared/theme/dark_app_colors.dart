@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:dashyou/ui/styles/app_theme/app_colors.dart';
-import 'package:dashyou/ui/styles/app_theme/theme_colors.dart';
+import 'package:patas_unidas_mobile/shared/theme/app_colors.dart';
+import 'package:patas_unidas_mobile/shared/theme/theme_colors.dart';
 
 class DarkAppColors implements ThemeColors {
   const DarkAppColors();
@@ -22,7 +22,7 @@ class DarkAppColors implements ThemeColors {
   Color get textFieldBorderSideColor => const Color(0xFF333333);
 
   @override
-  Color get elevatedButtonBackground =>  AppColors.primary;
+  Color get elevatedButtonBackground => AppColors.primary;
 
   @override
   Color get elevatedButtonColor => AppColors.white;

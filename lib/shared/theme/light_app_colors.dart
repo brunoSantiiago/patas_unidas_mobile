@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:dashyou/ui/styles/app_theme/app_colors.dart';
-import 'package:dashyou/ui/styles/app_theme/theme_colors.dart';
+import 'package:patas_unidas_mobile/shared/theme/app_colors.dart';
+import 'package:patas_unidas_mobile/shared/theme/theme_colors.dart';
 
 class LightAppColors implements ThemeColors {
   const LightAppColors();

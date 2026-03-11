@@ -1,24 +1,25 @@
-import 'package:dashyou/core/domain/auth/auth_failures.dart';
-import 'package:dashyou/core/domain/entities/user.dart';
-import 'package:dashyou/core/dto/login_DTO.dart';
-import 'package:dashyou/core/ports/auth/in/load_user_use_case.dart';
-import 'package:dashyou/core/ports/auth/in/login_command.dart';
-import 'package:dashyou/core/ports/auth/in/login_user_use_case.dart';
-import 'package:dashyou/core/ports/auth/in/logout_user_use_case.dart';
-import 'package:dashyou/core/utils/login_form_error.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:bloc/bloc.dart';
+import 'package:flutter/cupertino.dart';
+
 import 'package:injectable/injectable.dart';
 
-part 'auth_event.dart';
+import 'package:patas_unidas_mobile/core/domain/entities/user.dart';
+import 'package:patas_unidas_mobile/core/dto/login_dto.dart';
+import 'package:patas_unidas_mobile/core/ports/auth/in/auth_failures.dart';
 
+import 'package:patas_unidas_mobile/core/ports/auth/in/load_user_use_case.dart';
+import 'package:patas_unidas_mobile/core/ports/auth/in/login_command.dart';
+import 'package:patas_unidas_mobile/core/ports/auth/in/login_form_error.dart';
+import 'package:patas_unidas_mobile/core/ports/auth/in/login_user_use_case.dart';
+
+part 'auth_event.dart';
 part 'auth_state.dart';
 
 @injectable
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final LoginUserUseCase _loginUseCase;
   final LoadUserUseCase _onUserChangedUseCase;
-  final LogoutUseCase _logoutUseCase;
+  final LoadUserUseCase _logoutUseCase;
 
   AuthBloc(this._loginUseCase, this._logoutUseCase, this._onUserChangedUseCase)
     : super(AuthInitialState()) {

@@ -1,5 +1,5 @@
-import 'package:dashyou/ui/styles/app_theme/theme_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:patas_unidas_mobile/shared/theme/theme_colors.dart';
 
 class AppOutputTheme {
   static TextTheme getTheme(ThemeColors palette) => TextTheme(
