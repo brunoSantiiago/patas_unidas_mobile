@@ -1,2 +1,1 @@
-class AppImages {
-}
+class AppImages {}

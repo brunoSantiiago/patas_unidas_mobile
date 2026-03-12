@@ -1,4 +1,3 @@
-
 import 'package:injectable/injectable.dart';
 import 'package:patas_unidas_mobile/core/domain/entities/user.dart';
 import 'package:patas_unidas_mobile/core/ports/auth/out/load_user_port.dart';
@@ -12,5 +11,4 @@ class LoadUserUseCase {
   Stream<User?> execute() {
     return _loadUserPort.loadUser();
   }
-
 }

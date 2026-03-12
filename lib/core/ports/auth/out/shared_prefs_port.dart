@@ -1,4 +1,3 @@
-
 abstract class SharedPrefsPort {
   Future<void> setToken(String value);
 
@@ -9,5 +8,4 @@ abstract class SharedPrefsPort {
   Future<void> saveThemeMode(bool isDark);
 
   Future<bool> getThemeMode();
-
 }
