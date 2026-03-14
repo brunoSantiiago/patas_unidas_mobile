@@ -52,19 +52,9 @@ class DataBaseHelper {
           'name': 'Wislei',
         });
 
-        batch.insert('stores', {
-          'code': 'sudoeste',
-          'name': 'Loja Sudoeste',
-        });
-        batch.insert('stores', {
-          'code': 'sul',
-          'name': 'Loja Sul',
-        });
-        batch.insert('stores', {
-          'code': 'noroeste',
-          'name': 'Loja Noroeste',
-        });
-
+        batch.insert('stores', {'code': 'sudoeste', 'name': 'Loja Sudoeste'});
+        batch.insert('stores', {'code': 'sul', 'name': 'Loja Sul'});
+        batch.insert('stores', {'code': 'noroeste', 'name': 'Loja Noroeste'});
 
         batch.insert('user_stores', {'user_id': 1, 'store_id': 1});
         batch.insert('user_stores', {'user_id': 1, 'store_id': 2});
@@ -83,4 +73,3 @@ class DataBaseHelper {
     );
   }
 }
-

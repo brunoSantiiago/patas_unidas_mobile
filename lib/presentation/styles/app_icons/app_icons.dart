@@ -1,3 +1,1 @@
-class AppIcons {
-
-}
+class AppIcons {}
