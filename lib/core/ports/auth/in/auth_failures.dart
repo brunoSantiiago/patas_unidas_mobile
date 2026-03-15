@@ -1,4 +1,3 @@
-
 import 'package:patas_unidas_mobile/data/exception/http_exception.dart';
 
 abstract class AuthFailure implements Exception {

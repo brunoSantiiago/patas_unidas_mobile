@@ -6,7 +6,6 @@ abstract class AuthEvent {}
 class AppStartedEvent extends AuthEvent {}
 
 class LoginAuthEvent extends AuthEvent {
-
   final LoginDTO dto;
 
   LoginAuthEvent(this.dto);

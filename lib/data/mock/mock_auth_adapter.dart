@@ -1,4 +1,3 @@
-
 import 'package:injectable/injectable.dart';
 import 'package:patas_unidas_mobile/core/domain/entities/user.dart' as entity;
 import 'package:patas_unidas_mobile/core/dto/login_dto.dart';
